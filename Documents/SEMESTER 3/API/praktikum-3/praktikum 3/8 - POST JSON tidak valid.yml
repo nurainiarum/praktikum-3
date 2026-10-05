@@ -1,0 +1,18 @@
+info:
+  name: 8 - POST JSON tidak valid
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{local_url}}/destinations"
+  body:
+    type: json
+    data: "{ 'name': 'Air Terjun Wera' }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

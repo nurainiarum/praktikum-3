@@ -1,0 +1,18 @@
+info:
+  name: 9 - PUT ubah id 6
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{local_url}}/destinations/6"
+  body:
+    type: json
+    data: '{ "name": "Air Terjun Wera", "region": "Sigi", "category": "air terjun" }'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
